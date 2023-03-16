@@ -1,0 +1,441 @@
+html,
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  /* font-size: 0; */
+
+}
+
+body {
+  background-color: #2b2b2b;
+  /* O corpo do projeto */
+}
+
+.navigation {
+  background-color: #2b2b2b;
+  color: white;
+  height: 50px;
+
+  animation-name: navegacao;
+  animation-duration: 3s;
+
+}
+
+.navigation ul {
+  margin-top: 0;
+  list-style: none;
+  padding-left: 0;
+  text-align: right;
+  height: 50px;
+}
+
+.navigation li {
+  display: inline-block;
+  padding-left: 30px;
+  padding-right: 30px;
+  line-height: 50px;
+  color: white;
+  font-weight: 100;
+  font-size: 18px;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  /* (a:hover) Propriedade que muda a cor do link, ao contato do cursor */
+  color: #f27609
+}
+
+/* Ocultando o icone de três linhas "menu" */
+.navigation li.threeline-icon {
+  display: none;
+}
+.navigation li.threeline-icon:hover {
+   color: #f27609;
+   cursor: pointer;
+}
+
+
+
+.capa {
+  vertical-align: top;
+  color: white;
+
+}
+
+.capa span {
+  color: #f27609;
+}
+
+.capa div {
+  display: inline-block;
+  height: 650px;
+  font-size: 20px;
+}
+
+.capa h2 {
+  font-size: 14px;
+}
+
+.imagem {
+  width: 40%;
+  text-align: center;
+
+  animation-name: profile-capa;
+  animation-duration: 2s;
+}
+
+.imagem img {
+  width: 300px;
+  border-radius: 300px;
+  margin-top: 100px;
+}
+
+.textos {
+  vertical-align: top;
+  width: 59%;
+  font-weight: 400;
+
+  animation-name: titulo-capa;
+  animation-duration: 2s;
+
+}
+
+.textos div {
+  margin-top: 150px;
+}
+
+.textos h1 {
+  text-transform: uppercase;
+  line-height: 40px;
+}
+
+.textos h2 {
+  font-weight: 100;
+  margin-top: -19px;
+}
+
+/*------ Página 02 Currículo ------ */
+
+.main {
+  /* Caso adicione valores diferentes,a ordem fica da seguinte forma:
+      Um valor , a execução fica em todas as direções ,top,right,left e botton.
+      Dois valores ,a execução fica em top e bottom.
+      Três valores ,a execução fica em top,right e botton. */
+  padding: 80px
+    /*top*/
+    180px
+    /*left*/
+    80px
+    /*right*/
+    100px
+    /*botton */
+  ;
+  animation-name: conteudo;
+  animation-duration: 2s;
+}
+
+.cv-pick {
+  float: left;
+  width: 280px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.main h1 {
+  font-weight: normal;
+  color: white;
+}
+
+.main h2 {
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-top: 50px;
+}
+
+.main h3 {
+  color: #f27609;
+  text-transform: uppercase;
+}
+
+.main p {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 24px;
+  text-align: justify;
+  /* Alinhamento justificado
+  com as bordas do texto alinhadas. */
+}
+
+.caminho {
+  color: gray;
+  list-style: none;
+  padding-left: 0;
+}
+
+
+.caminho li {
+  display: inline-block;
+}
+
+.caminho a {
+  color: gray;
+}
+
+/*------ Página 03 Contato ------ */
+
+
+.social-img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.back-link {
+  color: #f27609;
+}
+
+/* ----Página de Portfolio---- */
+
+.miniatura {
+  width: 320px;
+  height: 320px;
+  background-image: url("../img/ccb.jpg");
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  /*( background-repeat:no-repeat; ) O padrão é repeat , 
+  repetindo a imagem , no entanto ,com  o (no-repeat) esta execução é cancelada.  */
+  background-size: contain;
+  /* Amplia a imagem , porém , pode danificar a mesma. */
+  overflow: hidden;
+  /* A propriedade overflow especifica quando o conteúdo de um elemento de nível de bloco deve ser cortado, exibido com barras de rolagem ou se transborda do elemento.O padrão desta propriedade é Visible.
+  - hidden: O conteúdo é cortado e nenhuma barra de rolagem é exibida. */
+}
+
+.miniatura a {
+  text-decoration: none;
+  /* Cancela a linha azul do link */
+}
+
+.blackbox {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  padding-top: 120px;
+  opacity: 0;
+  transition: 1s;
+
+}
+
+/* Função hover , determina a opacidade da animação */
+.blackbox:hover {
+  opacity: 0.8;
+  transition: 1s;
+  /* Propriedade transition: determina o intervalo da opacity entre o inicio e fim.
+  Serve tanto para entrada do mouse, com também, na saída do mesmo */
+}
+
+.blackbox {
+  text-align: center;
+}
+
+.blackbox h1 {
+  font-size: 16px;
+  color: #f27609;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.blackbox h2 {
+  text-transform: none;
+  font-weight: 100;
+  margin-top: 0;
+
+}
+
+/* ---webdesign-psp--- */
+
+.foto-trabalhos {
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+/* Animações */
+
+@keyframes profile-capa {
+  0% {
+    /* O 0% equivale ao início da animação */
+    opacity: 0;
+    transform: translate(0px, 20px);
+  }
+
+  100% {
+    /* O 100% equivale ao final da animação */
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes titulo-capa {
+  0% {
+    /* O 0% equivale ao início da animação */
+    opacity: 0;
+    transform: translate(0px, -20px);
+  }
+
+  100% {
+    /* O 100% equivale ao final da animação */
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes navegacao {
+  0% {
+    /* O 0% equivale ao início da animação */
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    /* O 100% equivale ao final da animação */
+    opacity: 1;
+  }
+}
+
+@keyframes conteudo {
+  0% {
+    opacity: 0s;
+    transform: translate(-20px, 0px)
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}
+
+/* Media query - Media responsiva */
+
+@media (max-width: 1000px) {
+
+  .navigation li {
+    display: none;
+  }
+
+  .navigation li.threeline-icon {
+    display: inline-block;
+  }
+
+  .capa div {
+    display: block;
+    height: auto;
+  }
+
+  .imagem {
+    width: 100%;
+
+  }
+
+  .imagem img {
+    margin-top: 0;
+    max-width: 80%;
+  }
+
+  .textos {
+    text-align: center;
+    width: 100%;
+
+  }
+
+  .textos h1 {
+    margin-top: 30px;
+    font-size: 36px;
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 55px;
+    /*Altera a altura entre as linhas */
+  }
+
+  .textos h2 {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+
+  .textos div {
+    margin-top: 0;
+  }
+
+  .main {
+    padding: 10px 5% 40px 5%;
+    
+  }
+  .main a {
+    overflow-wrap: break-word;
+    /* Defini se o navegador deve inserir 
+  quebras de linha em uma string inquebrável para evitar que o texto 
+  transborde sua caixa */
+  word-wrap: break-word;
+  }
+
+  .main p {
+    text-align: left;
+    line-height: 30px;
+  }
+
+  .caminho li {
+    font-size: 14px;
+  }
+
+  .cv-pick {
+    float: none;
+    max-width: 100%;
+
+  }
+
+  .miniatura {
+    max-width: 100%;
+    /* A propriedade CSS max-width define a largura 
+    máxima de um elemento. Isso evita que o valor usado da propriedade
+     width se torne maior que o valor especificado por max-width. */
+     background-size: auto 100%;
+  }
+
+  .blackbox {
+    opacity: 0.8;
+  }
+
+  .menujs {    
+    height: auto;
+      }
+  .menujs ul {
+    height: auto;
+    text-align: center;
+    
+    padding-right: 15%;
+    padding-left: 15%;
+  }
+  .menujs li {
+    display: block;
+    border-bottom: solid gray 1px;
+    width: 100%;
+    padding: 0;
+  }
+
+
+
+
+
+}
